@@ -59,11 +59,8 @@ public class Seeder {
     public void seedRegistration(Subject subject,List<Student> students){
         List<Student> students1=new ArrayList<>(students);
         int catStudents= random.nextInt((maxStudentbySubject-minStudentBySubject+1))+minStudentBySubject;
-        System.out.println("Cantidad estudiantes"+catStudents);
         for (int i =0;i<catStudents&&!students1.isEmpty();i++) {
-            System.out.println("tamaño de la lista"+students1.size());
             int indexStudent=random.nextInt(students1.size());
-            System.out.println("indice"+indexStudent);
             Student student=students1.remove(indexStudent);
             Registration registration=new Registration();
             registration.setSubject(subject);

@@ -17,7 +17,7 @@ public class Registration {
     @ManyToOne
     @JoinColumn(referencedColumnName = "id_subject", nullable = false)
     private Subject subject;
-    private Double qualification1;
-    private Double qualification2;
-    private Double qualification3;
+    private Double qualification1=0.0;
+    private Double qualification2=0.0;
+    private Double qualification3=0.0;
 }
